@@ -1,0 +1,22 @@
+{
+  "name": "video-review-kit",
+  "version": "1.0.0",
+  "description": "A small tool that hands a video (picture and sound) to Gemini and brings Gemini's read back to Claude, from the command line or as an MCP tool.",
+  "type": "module",
+  "main": "watch-core.js",
+  "bin": {
+    "video-review": "watch.js"
+  },
+  "scripts": {
+    "start": "node watch-mcp-server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "homepage": "https://olympusengine.io/care-package/video-review",
+  "dependencies": {
+    "@google/genai": "2.31.0",
+    "@modelcontextprotocol/sdk": "1.32.2"
+  }
+}
